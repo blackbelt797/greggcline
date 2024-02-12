@@ -15,15 +15,14 @@ export default function Blog({ id }: Props) {
    <div className="flex flex-col items-center justify-center lg:flex-row lg:flex-wrap  gap-24 2xl:gap-60">
     {/* Card number 1 */}
     <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-     <img className="rounded-t-lg" src="./images/blackTesla1.jpg" alt="Tint Survices provided" />
+     <img className="rounded-t-lg" src="./images/SamplePhoto1.jpg" alt="Tint Survices provided" />
      <div className="p-5">
-      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vehicle Tint</h5>
+      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Blog Post 1</h5>
 
-      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-       We provide quality Car, Truck and SUV tint professionally installed at your home or business.{' '}
-      </p>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Post 1</p>
+
       <a
-       href="tel:+1(951)428-0225"
+       href="/#"
        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
        Book Appointments
        <svg
@@ -45,12 +44,10 @@ export default function Blog({ id }: Props) {
     </div>
     {/* Card Number 2  */}
     <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-     <img className="rounded-t-lg" src="./images/tinted-house-windows.jpg" alt="Tint Survices provided" />
+     <img className="rounded-t-lg" src="./images/SamplePhoto2.jpg" alt="Tint Survices provided" />
      <div className="p-5">
-      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Window Tint</h5>
-      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-       We provide quality window tint professionally installed at your home or business. Helps reduce heat and glare.
-      </p>
+      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Blog Post 2</h5>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Post 2</p>
       <a
        href="tel:+1(951)428-0225"
        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -73,15 +70,13 @@ export default function Blog({ id }: Props) {
      </div>
     </div>
     <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-     <img className="rounded-t-lg" src="./images/meltedTurff.jpeg" alt="Tint Survices provided" />
+     <img className="rounded-t-lg" src="./images/SamplePhoto3.jpg" alt="Tint Survices provided" />
 
      <div className="p-5">
-      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Turf Protection</h5>
+      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Post 3</h5>
 
-      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-       Protect your turf from melting with our window tint. It will reduce heat and the suns reflection from destroying
-       your expensive turf.
-      </p>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Post 3</p>
+
       <a
        href="tel:+1(951)428-0225"
        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

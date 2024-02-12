@@ -14,11 +14,11 @@ export default function NavBar() {
 
  return (
   <div>
-   <header className="absolute inset-x-0 top-0 z-50">
-    <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+   <header className=" fixed  inset-x-0 top-0 z-50">
+    <nav className="  flex items-center justify-between p-6 lg:px-8" aria-label="Global">
      <div className="relative flex rounded-xl py-1.5 pl-2 pr-44">
-      <a href="{navigation.name}" className="-m-1.5 p-1.5">
-       <span className="absolute font-bold text-white">Gregg Cline</span>
+      <a href="{navigation.name}" className="-m-1.5 p-1.5 text-lg font-bold text-white">
+       GC
       </a>
      </div>
      <div className="flex lg:hidden">
@@ -35,7 +35,7 @@ export default function NavBar() {
        <Link
         to={`#${item.name.toLowerCase().replace(' ', '-')}`}
         key={item.name}
-        className="text-sm font-semibold leading-6 text-white">
+        className="text-lg font-semibold leading-6 text-white">
         {item.name}
        </Link>
       ))}

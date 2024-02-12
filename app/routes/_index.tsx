@@ -2,6 +2,7 @@ import type { MetaFunction } from '@remix-run/node';
 
 import NavBar from '~/NavBar';
 import Hero from '~/Hero';
+import About from '~/About';
 import Portfolio from '~/Portfolio';
 import Blog from '~/Blog';
 import Footer from '~/Footer';
@@ -15,6 +16,7 @@ export default function Index() {
   <div>
    <NavBar />
    <Hero />
+   <About />
    <Portfolio id="portfolio" />
    <Blog id="blog" />
    <Footer />
