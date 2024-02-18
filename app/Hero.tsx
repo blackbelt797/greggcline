@@ -1,6 +1,6 @@
 export default function Hero() {
  return (
-  <div className="flex flex-col justify-center items-center px-8 py-20 my-20 lg:flex-row lg:my-44 lg:justify-between lg:w-full lg:px-14 lg:items-start ">
+  <div className=" lg flex flex-col justify-center items-center px-8 py-20 my-20 lg:flex-row lg:my-44 lg:justify-between lg:w-full lg:px-14 lg:items-start ">
    <div className="max-w-lg lg:w-1/2">
     <h1 className="mb-12 text-7xl leading-snug font-extrabold  tracking-tight text-gray-900  md:text-5xl lg:text-6xl lg:leading-tight  dark:text-white">
      Hey I&apos;m Gregg and I build stuff for the web.
@@ -26,7 +26,7 @@ export default function Hero() {
      </svg>
     </a>
    </div>
-   <img className="max-w-lg" src="./images/NeonPic.jpg" alt="Neon Fish" />
+   <img className=" max-w-sm rounded-md" src="./images/ProfilePic.jpg" alt="Pic of Gregg" />
   </div>
  );
 }
