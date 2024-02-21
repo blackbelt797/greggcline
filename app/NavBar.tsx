@@ -17,14 +17,14 @@ export default function NavBar() {
    <header className=" fixed  inset-x-0 top-0 z-50">
     <nav className="  flex items-center justify-between p-6 lg:px-8" aria-label="Global">
      <div className="relative flex rounded-xl py-1.5 pl-2 pr-44">
-      <a href="{navigation.name}" className="-m-1.5 p-1.5 text-lg font-bold text-white">
+      <a href="{navigation.name}" className="-m-1.5 p-1.5 text-lg font-bold ">
        GC
       </a>
      </div>
      <div className="flex lg:hidden">
       <button
        type="button"
-       className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+       className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 "
        onClick={() => setMobileMenuOpen(true)}>
        <span className="sr-only">Open main menu</span>
        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -35,7 +35,7 @@ export default function NavBar() {
        <Link
         to={`#${item.name.toLowerCase().replace(' ', '-')}`}
         key={item.name}
-        className="text-lg font-semibold leading-6 text-white">
+        className="text-lg font-semibold leading-6 ">
         {item.name}
        </Link>
       ))}
@@ -44,12 +44,12 @@ export default function NavBar() {
 
     <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
      <div className="fixed inset-0 z-50" />
-     <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+     <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-200 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div className="flex items-center justify-between">
        <a href="{navigation.name}" className="-m-1.5 p-1.5">
         <span className="sr-only">Your Company</span>
        </a>
-       <button type="button" className="-m-2.5 rounded-md p-2.5 text-white" onClick={() => setMobileMenuOpen(false)}>
+       <button type="button" className="-m-2.5 rounded-md p-2.5" onClick={() => setMobileMenuOpen(false)}>
         <span className="sr-only">Close menu</span>
         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
        </button>
@@ -61,7 +61,7 @@ export default function NavBar() {
           <Link
            to={`#${item.name.toLowerCase().replace(' ', '-')}`}
            key={item.name}
-           className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-black">
+           className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-black">
            {item.name}
           </Link>
          ))}
