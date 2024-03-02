@@ -17,7 +17,7 @@ export default function NavBar() {
    <header className=" fixed  inset-x-0 top-0 z-50">
     <nav className="  flex items-center justify-between p-6 lg:px-8" aria-label="Global">
      <div className="relative flex rounded-xl py-1.5 pl-2 pr-44">
-      <a href="{navigation.name}" className="-m-1.5 p-1.5 text-lg font-bold ">
+      <a href="{navigation.name}" className="-m-1.5 p-1.5 text-lg font-bold z-10 ">
        GC
       </a>
      </div>
