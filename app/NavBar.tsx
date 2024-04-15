@@ -14,10 +14,10 @@ export default function NavBar() {
 
  return (
   <div>
-   <header className=" fixed  inset-x-0 top-0 z-50">
-    <nav className="  flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+   <header className=" fixed flex justify-center align-bottom w-full inset-x-0 top-0 z-50 mt-4">
+    <nav className="flex justify-between items-center  rounded-lg w-4/5 p-6 lg:px-8" aria-label="Global">
      <div className="relative flex rounded-xl py-1.5 pl-2 pr-44">
-      <a href="{navigation.name}" className="-m-1.5 p-1.5 text-lg font-bold z-10 ">
+      <a href="{navigation.name}" className="-m-1.5 p-1.5 text-lg font-bold z-10 text-white ">
        GC
       </a>
      </div>
@@ -35,7 +35,7 @@ export default function NavBar() {
        <Link
         to={`#${item.name.toLowerCase().replace(' ', '-')}`}
         key={item.name}
-        className="text-lg font-semibold leading-6 ">
+        className="text-lg font-semibold leading-6 text-white">
         {item.name}
        </Link>
       ))}
@@ -55,13 +55,13 @@ export default function NavBar() {
        </button>
       </div>
       <div className="mt-6 flow-root">
-       <div className="-my-6 divide-y text-gray-800">
+       <div className="-my-6 divide-y text-white">
         <div className="space-y-2 py-6">
          {navigation.map((item) => (
           <Link
            to={`#${item.name.toLowerCase().replace(' ', '-')}`}
            key={item.name}
-           className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-black">
+           className="-mx-3 block rounded-lg bg-black border-btn_border px-3 py-2 text-base font-semibold leading-7   hover:text-black">
            {item.name}
           </Link>
          ))}
