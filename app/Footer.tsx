@@ -1,4 +1,5 @@
-/* eslint-disable react/no-unknown-property */
+import IgIcon from './icons/instagram';
+
 export default function Footer() {
  const currentYear = new Date().getFullYear();
 
@@ -7,7 +8,9 @@ export default function Footer() {
    <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div className="flex flex-col gap-4 justify-center">
      <ul className="text-white flex flex-row justify-around w-full">
-      <li></li>
+      <li>
+       <IgIcon />
+      </li>
       <li>
        <a href="/">Instagram</a>
       </li>
