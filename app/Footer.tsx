@@ -1,4 +1,6 @@
 import IgIcon from './icons/instagram';
+import XLogo from './icons/xLogo';
+import LinkedinLogo from './icons/linkeninLogo';
 
 export default function Footer() {
  const currentYear = new Date().getFullYear();
@@ -12,10 +14,10 @@ export default function Footer() {
        <IgIcon />
       </li>
       <li>
-       <a href="/">Instagram</a>
+       <LinkedinLogo />
       </li>
       <li>
-       <a href="/">Instagram</a>
+       <XLogo />
       </li>
      </ul>
      <div className="flex w-100% justify-center items-center"></div>
