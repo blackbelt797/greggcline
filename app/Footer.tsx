@@ -1,6 +1,7 @@
 import IgIcon from './icons/instagram';
 import XLogo from './icons/xLogo';
 import LinkedinLogo from './icons/linkeninLogo';
+import { Link } from '@remix-run/react';
 
 export default function Footer() {
  const currentYear = new Date().getFullYear();
@@ -11,13 +12,19 @@ export default function Footer() {
     <div className="flex flex-col gap-4 justify-center">
      <ul className="text-white flex flex-row justify-around w-full">
       <li>
-       <IgIcon />
+       <Link to={'https://www.instagram.com/greggcline_'} target="_blank" rel="noopener noreferrer">
+        <IgIcon />
+       </Link>
       </li>
       <li>
-       <LinkedinLogo />
+       <Link to={'https://www.linkedin.com/in/greggcline'} target="_blank" rel="noopener noreferrer">
+        <LinkedinLogo />
+       </Link>
       </li>
       <li>
-       <XLogo />
+       <Link to={'https://twitter.com/ggcline83'} target="_blank" rel="noopener noreferrer">
+        <XLogo />
+       </Link>
       </li>
      </ul>
      <div className="flex w-100% justify-center items-center"></div>
